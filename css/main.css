@@ -1,3 +1,7 @@
+body{
+    background: url('../assets/img/chairlift.jpg') no-repeat center fixed;
+}
+
 .mainContainer{
     height:100vh;
     width:100vw;
@@ -8,18 +12,18 @@
 }
 
 #sidebar{
+    position: fixed;
     display: flex;
     flex-direction: column;
-/*    justify-content: space-around;*/
     align-items: center;   
     height:100%;
     width: 5vw;
-    background-color: #494949;
+    background-color: rgba(73, 73, 73, 0.7);
     color: white;
 }
 .sidebar__logoContainer{
     margin-top: 20px;
-    height:33%;
+    height:33.33%;
     width:auto;
     display: flex;
     flex-direction: column;
@@ -32,7 +36,7 @@
     height:auto;   
 }
 .sidebar__linksContainer{
-    height:33%;
+    height:33.33%;
     width:auto;
     display: flex;
     flex-direction: column;
@@ -44,12 +48,14 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    height:33%;
+    height:33.33%;
     width:auto;
     justify-content: flex-end;
     align-items: center;    
 }
 .sidebar__anchors{
+    height:auto;
+    width:50%;
     color:whitesmoke;
 }
 
@@ -60,17 +66,14 @@
     color: #01acf1;
 }
 
-
-
-.background{
+.page_section{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: space-around;   
-    width:95vw;
-    height:100%;
-    z-index: 0;    
-    background: url('../assets/img/chairlift.jpg') no-repeat center fixed;
+    align-items: center;
+    width:95%;
+    height:100vh;
+      
 }
 
 .contentArea{
@@ -79,12 +82,11 @@
     background-color: rgba(0,0,0,0.75);
     z-index: 1;
 }
-
-
 .main_heading {
+    font-size: 50px;
     font-family: Raleway, sans-serif;   
 }
-
 .secondary_heading{
+    font-size: 40px;
     font-family: Raleway, sans-serif;
 }
