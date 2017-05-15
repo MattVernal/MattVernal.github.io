@@ -65,6 +65,9 @@ body{
 .sidebar__anchors :active{
     color: #01acf1;
 }
+.sidebar__anchors__active{
+    color: #01acf1 !important;
+}
 
 .page_section{
     display:flex;
