@@ -1,8 +1,22 @@
 body{
     background: url('../assets/img/chairlift.jpg') no-repeat center fixed;
 }
+.main_heading {
+    font-size: 50px;
+    font-family: Raleway, sans-serif;   
+}
+.secondary_heading{
+    font-size: 40px;
+    font-family: Raleway, sans-serif;
+}
+.paragraph_text{
+    color:whitesmoke;
+    font-size: 15px;
+    font-family: Raleway, sans-serif;
+}
 
-.mainContainer{
+.page_container{
+    margin-left: 10vw;
     height:auto;
     width:auto;
     position:absolute;
@@ -40,14 +54,24 @@ body{
     justify-content:space-between;
     align-items: center;
 }
-.sidebar__socialContainer{
-    margin-bottom: 20px;
+.social_container{
+    position:fixed;    
     display: flex;
-    flex-direction: column;
-    height:33.33%;
-    width:auto;
-    justify-content: flex-end;
+    flex-direction: row;    
+    width:20%;
+    justify-content: space-between;
     align-items: center;    
+}
+.social__anchors{
+    height:auto;
+    width:50%;
+    color: rgba(73, 73, 73, 0.7);;
+}
+.social__anchors :hover{
+    color: #01acf1;
+}
+.social__anchors :active{
+    color: #01acf1;
 }
 .sidebar__anchors{
     height:auto;
@@ -70,35 +94,86 @@ body{
     flex-direction: column;
     width:95%;
     height:100vh;
-    /*position:absolute;*/
 }
 
 #landing{
     justify-content: center;
     align-items: center; 
 }
-
-#profile_container{
-    background-color: rgba(73, 73, 73, 0.7);
-    flex-direction: row;
-    align-items: center;
-}
-
 #profile{
     align-items: center;
     justify-content: center;
 }
 
-.main_heading {
-    font-size: 50px;
-    font-family: Raleway, sans-serif;   
+#profile_container{
+    background-color: rgba(73, 73, 73, 0.7);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
 }
-.secondary_heading{
-    font-size: 40px;
-    font-family: Raleway, sans-serif;
+#profile_img_container{
+    width:40%;
+    height:auto;        
+    margin:10px;
 }
-.paragraph_text{
-    color:whitesmoke;
-    font-size: 20px;
-    font-family: Raleway, sans-serif;
+#profile_img{
+    height: 100%;
+    width: auto;
+}
+#profile_text_container{
+    margin:10px;
+}
+#skills{
+    align-items: center;
+    justify-content: center;
+}
+#skills_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(73, 73, 73, 0.7);
+    width: 80%;
+    padding: 10px;
+}
+.progress_bar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+    height:30px;
+    border: whitesmoke solid 2px;
+    text-align: center;
+}
+.progress_bar_text{
+    font-family: raleway, sans-serif;
+    position: absolute;
+    margin: 0;
+}
+
+.progress-bar-filler {
+    align-self: flex-start;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+#htmlBar {
+    width: 85%;
+}
+#jsBar {
+    width: 90%;
+}
+#cssBar {
+    width: 60%;
+}
+#phpBar {
+    width: 70%;
+}
+#sqlBar {
+    width: 90%;
+}
+#jqBar {
+    width: 85%;
 }

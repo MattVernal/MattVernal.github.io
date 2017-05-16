@@ -8,9 +8,14 @@ var portfolioHeight = sectionHeight * 3;
 var contactHeight = sectionHeight * 4;
 
 var activeSection = null;
+var barsToggled = false;
+
+$('.progress-bar-filler').each(function() {
+    $(this).animate({width: "toggle"}, 0);
+});
 
 $(document).scroll(function () {
-    addActiveClass(activeSection);
+    activeSectionWatcher(activeSection);
 });
 
 $("#homeLink").click(function () {
@@ -33,7 +38,7 @@ $("#contactLink").click(function () {
     $('html, body').animate({scrollTop: contactHeight}, 500);
 });
 
-function addActiveClass(activeSection) {
+function activeSectionWatcher(activeSection) {
     removeActiveClass();
     currentScrollHeight = ($('body').scrollTop() + 10);
     if (currentScrollHeight >= homeHeight && currentScrollHeight <= profileHeight) {
@@ -47,6 +52,7 @@ function addActiveClass(activeSection) {
     if (currentScrollHeight >= skillsHeight && currentScrollHeight <= portfolioHeight) {
         $('#skillsLink').addClass("sidebar__anchors__active");
         activeSection = $('#skillsLink');
+        animateProgressBars();
     }
     if (currentScrollHeight >= portfolioHeight && currentScrollHeight <= contactHeight) {
         $('#portfolioLink').addClass("sidebar__anchors__active");
@@ -58,10 +64,22 @@ function addActiveClass(activeSection) {
     }
     return activeSection;
 }
-function removeActiveClass(){
+function removeActiveClass() {
     var sections = $('.sidebar__anchors');
-    sections.each(function(){
+    sections.each(function () {
         $(this).removeClass('sidebar__anchors__active');
     });
 
+}
+
+function animateProgressBars() {
+    if (!barsToggled) {
+        var bars = $('.progress-bar-filler');
+        $(bars).each(function () {
+            $(this).animate({
+                width: "toggle"
+            }, 300);
+        });
+    }
+    barsToggled = true;
 }

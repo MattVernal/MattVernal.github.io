@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <script src="https://use.fontawesome.com/fcdfefcf6d.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </head>
     <body>
         <aside id="sidebar">
@@ -23,38 +23,72 @@
                 <a class="sidebar__anchors" id="portfolioLink"><i class="fa fa-exclamation" aria-hidden="true"></i></a>
                 <a class="sidebar__anchors" id="contactLink"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
             </div>
-            <div class="sidebar__socialContainer">                    
-                <a href="https://www.facebook.com/matt.vernal" class="sidebar__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="sidebar__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/_Matt_Vernal" class="sidebar__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://github.com/MattVernal" class="sidebar__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="http://codepen.io/MattVernal/" class="sidebar__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-            </div>
+
         </aside>
-        <section id="landing" class="page_section">
-            <h1 class="main_heading">MATTHEW VERNAL</h1>
-            <h1 class="secondary_heading">WEB DEVELOPER</h1>
-        </section>
-        <section id="profile" class="page_section">
-            <h1 class="secondary_heading">Profile</h1>
-            <div id="profile_container">
-                <div id="profile_img_container">
-                    <img id="profile_img" src="assets/img/matt_profile.jpg"/>
+        <div class="page_container">
+            <div class="social_container">                    
+                <a href="https://www.facebook.com/matt.vernal" class="social__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="social__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/_Matt_Vernal" class="social__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/MattVernal" class="social__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="http://codepen.io/MattVernal/" class="social__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </div>
+            <section id="landing" class="page_section">
+                <h1 class="main_heading">MATTHEW VERNAL</h1>
+                <h1 class="secondary_heading">WEB DEVELOPER</h1>
+            </section>
+            <section id="profile" class="page_section">
+                <h1 class="secondary_heading">Profile</h1>
+                <div id="profile_container">
+                    <div id="profile_img_container">
+                        <img id="profile_img" src="assets/img/matt_profile.jpg"/>
+                    </div>
+                    <div id="profile_text_container">
+                        <p class="paragraph_text">Hi! I'm Matt. I am a web developer from Christchurch currently based in Queenstown, New Zealand.<br>I studied web development at the YOOBEE school of design in Christchurch where I discovered a passion for building web applications.</p>
+                    </div>
+                </div> 
+            </section> 
+            <section id="skills" class="page_section">
+                <h1 class="secondary_heading">Skills</h1>
+                <div id="skills_container">
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>HTML</p>
+                        <div id="htmlBar" class='progress-bar-filler'></div>
+                    </div>
+                    <br>
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>Javascript</p>
+                        <div id="jsBar" class='progress-bar-filler'></div>
+                    </div>
+                    <br>
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>CSS</p>
+                        <div id="cssBar" class='progress-bar-filler'></div>
+                    </div>
+                    <br>
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>PHP</p>
+                        <div id="phpBar" class='progress-bar-filler'></div>
+                    </div>
+                    <br>
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>SQL</p>
+                        <div id="sqlBar" class='progress-bar-filler'></div>
+                    </div>
+                    <br>                    
+                    <div class='progress_bar'>
+                        <p class='progress_bar_text'>jQuery</p>
+                        <div id="jqBar" class='progress-bar-filler'></div>
+                    </div>
                 </div>
-                <div id="profile_text_container">
-                    <p class="paragraph_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in vestibulum quam. Phasellus a purus nisi. Donec eu ligula rutrum, ornare sapien a, vulputate massa. Etiam et sem vitae felis finibus luctus ullamcorper id mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis lorem nec viverra dapibus. Nunc et ex rhoncus, fermentum leo eu, gravida ligula. Aliquam ac mauris vel lectus rhoncus fringilla. Morbi nec augue lectus. Donec et lacus nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc a magna odio. Nunc varius sapien ut sem vestibulum congue. In ut risus libero. Vivamus vitae enim rutrum, mollis tellus porttitor, vulputate mi.</p>
-                </div>
-            </div> 
-        </section> 
-        <section id="skills" class="page_section">
-            <h1 class="secondary_heading">Skills</h1>
-        </section> 
-        <section id="portfolio" class="page_section">
-            <h1 class="secondary_heading">Portfolio</h1> 
-        </section>
-        <section id="contact" class="page_section">
-            <h1 class="secondary_heading">Contact</h1>
-        </section>
+            </section> 
+            <section id="portfolio" class="page_section">
+                <h1 class="secondary_heading">Portfolio</h1> 
+            </section>
+            <section id="contact" class="page_section">
+                <h1 class="secondary_heading">Contact</h1>
+            </section>
+        </div>
         <script src="js/main.js"></script>
     </body>
 </html>
