@@ -14,14 +14,11 @@ body{
     font-size: 15px;
     font-family: Raleway, sans-serif;
 }
-
 .page_container{
     margin-left: 5vw;
     height:auto;
-    /*width:100%;*/
     position:relative;
 }
-
 #sidebar{
     position: fixed;
     display: flex;
@@ -57,10 +54,12 @@ body{
 .social_container{
     position:fixed;    
     display: flex;
-    flex-direction: row;    
-    width:20%;
+    flex-direction: column;    
+    width:auto;
+    height:20%;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    align-self: flex-end;    
 }
 .social__anchors{
     height:auto;
@@ -74,11 +73,8 @@ body{
     color: #01acf1;
 }
 .sidebar__anchors{
-/*    height:auto;
-    width:50%;*/
     color:whitesmoke;
 }
-
 .sidebar__anchors :hover{
     color: #01acf1;
 }
@@ -88,18 +84,16 @@ body{
 .sidebar__anchors__active{
     color: #01acf1 !important;
 }
-
-.page_section{
+.page_section{    
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    width:95%;
+    width:100%;
     height:100vh;
 }
-
 #profile_container{
-    width:80%;
+    width:auto;
     background-color: rgba(73, 73, 73, 0.7);
     display:flex;
     flex-direction: row;
@@ -107,7 +101,7 @@ body{
     align-items: center;    
 }
 #profile_img_container{
-    width:40%;
+    width:auto;
     height:auto;        
     margin:10px;
 }
@@ -142,13 +136,11 @@ body{
     position: absolute;
     margin: 0;
 }
-
 .progress-bar-filler {
     align-self: flex-start;
     height: 100%;
     background-color: whitesmoke;
 }
-
 #htmlBar {
     width: 70%;
 }
@@ -167,11 +159,6 @@ body{
 #jqBar {
     width: 65%;
 }
-
-#portfolio{
-       
-}
-
 #portfolioContainer{
     background-color: rgba(73, 73, 73, 0.7);
     width: 80%;
@@ -196,7 +183,6 @@ body{
 .chevron :hover{
     color: #01acf1;
 }
-
 .portfolioItem{
     display:flex;
     flex-direction: column;
@@ -211,20 +197,28 @@ body{
     height:15%;
 }
 .portfolioItem__thumbnailContainer{
-   display:flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   height:70%;
-   width:auto;
-       
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:70%;
+    width:auto;       
 }
 .portfolioItem__thumbnail{
     height:80%;
     width: 80%;
 }
-
 .portfolioItem__description{
     text-align: center;
     height:15%;    
+}
+.contactForm__container{
+    background-color: rgba(73, 73, 73, 0.7);
+    width: 30%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    overflow-x: auto;
 }

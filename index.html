@@ -26,13 +26,13 @@
 
         </aside>
         <div class="page_container">
-            <!--            <div class="social_container">                    
-                            <a href="https://www.facebook.com/matt.vernal" class="social__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="social__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/_Matt_Vernal" class="social__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            <a href="https://github.com/MattVernal" class="social__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            <a href="http://codepen.io/MattVernal/" class="social__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-                        </div>-->
+            <div class="social_container">                    
+                <a href="https://www.facebook.com/matt.vernal" class="social__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="social__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/_Matt_Vernal" class="social__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/MattVernal" class="social__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="http://codepen.io/MattVernal/" class="social__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </div>
             <section id="landing" class="page_section">
                 <h1 class="main_heading">MATTHEW VERNAL</h1>
                 <h1 class="secondary_heading">WEB DEVELOPER</h1>
@@ -95,6 +95,7 @@
                         </div>
                         <div class='portfolioItem__description'>
                             <p class='paragraph_text'>WE02 Clientside scripting assignment.Queenstown and Wanaka based adventure tourism.<br>Created with plain HTML, JS and CSS</p>
+                            <a href="https://matthew.vernal.yoobee.net.nz/WE02/fttl/index.html" class="paragraph_text">Visit Site</a>                                
                         </div>
                     </div>
                     <div class='portfolioItem'>
@@ -106,16 +107,25 @@
                         </div>
                         <div class='portfolioItem__description'>
                             <p class='paragraph_text'>WE03 Serverside scripting assignment. Locum recruitment service.<br>Created with plain PHP, SQL, HTML, JS and CSS</p>
+                            <a href="https://matthew.vernal.yoobee.net.nz/WE02/fttl/index.html" class="paragraph_text">Visit Site</a>
                         </div>
                     </div>
                     <div class='portfolio__chevronContainer'><a class='chevron'><i id='chevronRight' class="fa fa-chevron-right fa-5x" aria-hidden="true"></i></a></div>
                 </div>
             </section>
             <section id="contact" class="page_section">
-                <h1 class="secondary_heading">Contact</h1>
+                <h1 class="secondary_heading">Contact</h1>                
+                    <form class="contactForm__container" action="https://formspree.io/matthew.vernal@gmail.com" method="POST">
+                        <label class="paragraph_text" for="name">Name:</label>
+                        <input type="text" name="name">
+                        <label  class="paragraph_text" for="email">Email:</label>
+                        <input type="email" name="_replyto">
+                        <label class="paragraph_text"  for="message">Message:</label>
+                        <textarea name="message" rows="10" cols="22"></textarea>
+                        <input type="submit" value="Send">
+                    </form>                
             </section>
         </div>
-
         <script src="js/main.js"></script>
     </body>
 </html>
