@@ -17,22 +17,22 @@
                 <img class="sidebar__logo" src="assets/img/MV_logo_white.png" alt="mv logo"/>
             </div>                
             <div class="sidebar__linksContainer">
-                <a class="sidebar__anchors" id="homeLink"><i class="fa fa-home" aria-hidden="true"></i></a>
-                <a class="sidebar__anchors" id="profileLink"><i class="fa fa-user" aria-hidden="true"></i></a>
-                <a class="sidebar__anchors" id="skillsLink"><i class="fa fa-code" aria-hidden="true"></i></a>
-                <a class="sidebar__anchors" id="portfolioLink"><i class="fa fa-exclamation" aria-hidden="true"></i></a>
-                <a class="sidebar__anchors" id="contactLink"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a class="sidebar__anchors" id="homeLink"><i class="fa fa-home fa-2x" aria-hidden="true" ></i></a>
+                <a class="sidebar__anchors" id="profileLink"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+                <a class="sidebar__anchors" id="skillsLink"><i class="fa fa-code fa-2x" aria-hidden="true"></i></a>
+                <a class="sidebar__anchors" id="portfolioLink"><i class="fa fa-exclamation fa-2x" aria-hidden="true"></i></a>
+                <a class="sidebar__anchors" id="contactLink"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
             </div>
 
         </aside>
         <div class="page_container">
-            <div class="social_container">                    
-                <a href="https://www.facebook.com/matt.vernal" class="social__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="social__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/_Matt_Vernal" class="social__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://github.com/MattVernal" class="social__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="http://codepen.io/MattVernal/" class="social__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-            </div>
+            <!--            <div class="social_container">                    
+                            <a href="https://www.facebook.com/matt.vernal" class="social__anchors"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/matthew-vernal-a15bb7122/" class="social__anchors"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/_Matt_Vernal" class="social__anchors"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://github.com/MattVernal" class="social__anchors"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="http://codepen.io/MattVernal/" class="social__anchors"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                        </div>-->
             <section id="landing" class="page_section">
                 <h1 class="main_heading">MATTHEW VERNAL</h1>
                 <h1 class="secondary_heading">WEB DEVELOPER</h1>
@@ -83,12 +83,39 @@
                 </div>
             </section> 
             <section id="portfolio" class="page_section">
-                <h1 class="secondary_heading">Portfolio</h1> 
+                <h1 class="secondary_heading">Portfolio</h1>
+                <div id='portfolioContainer'>
+                    <div class='portfolio__chevronContainer'><a class='chevron'><i id='chevronLeft' class="fa fa-chevron-left fa-5x" aria-hidden="true"></i></a></div>
+                    <div class='portfolioItem'>
+                        <div class='portfolioItem__title'>
+                            <h2 class='secondary_heading'>Fly to the Limit</h2>
+                        </div>
+                        <div class='portfolioItem__thumbnailContainer'>
+                            <img class='portfolioItem__thumbnail' src="assets/img/portfolio_thumbnails/fttl.PNG" alt=""/>                       
+                        </div>
+                        <div class='portfolioItem__description'>
+                            <p class='paragraph_text'>WE02 Clientside scripting assignment.Queenstown and Wanaka based adventure tourism.<br>Created with plain HTML, JS and CSS</p>
+                        </div>
+                    </div>
+                    <div class='portfolioItem'>
+                        <div class='portfolioItem__title'>
+                            <h2 class='secondary_heading'>Locatum</h2>
+                        </div>
+                        <div class='portfolioItem__thumbnailContainer'>
+                            <img class='portfolioItem__thumbnail' src="assets/img/portfolio_thumbnails/Locatum.PNG" alt=""/>                       
+                        </div>
+                        <div class='portfolioItem__description'>
+                            <p class='paragraph_text'>WE03 Serverside scripting assignment. Locum recruitment service.<br>Created with plain PHP, SQL, HTML, JS and CSS</p>
+                        </div>
+                    </div>
+                    <div class='portfolio__chevronContainer'><a class='chevron'><i id='chevronRight' class="fa fa-chevron-right fa-5x" aria-hidden="true"></i></a></div>
+                </div>
             </section>
             <section id="contact" class="page_section">
                 <h1 class="secondary_heading">Contact</h1>
             </section>
         </div>
+
         <script src="js/main.js"></script>
     </body>
 </html>

@@ -16,10 +16,10 @@ body{
 }
 
 .page_container{
-    margin-left: 10vw;
+    margin-left: 5vw;
     height:auto;
-    width:auto;
-    position:absolute;
+    /*width:100%;*/
+    position:relative;
 }
 
 #sidebar{
@@ -38,7 +38,6 @@ body{
     width:auto;
     display: flex;
     flex-direction: column;
-    /*justify-content: space-around;*/
     align-items: center;
     align-self: flex-start;
 }
@@ -48,11 +47,12 @@ body{
 }
 .sidebar__linksContainer{
     height:33.33%;
-    width:auto;
+    width:100%;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
+    align-self: center;
 }
 .social_container{
     position:fixed;    
@@ -74,8 +74,8 @@ body{
     color: #01acf1;
 }
 .sidebar__anchors{
-    height:auto;
-    width:50%;
+/*    height:auto;
+    width:50%;*/
     color:whitesmoke;
 }
 
@@ -92,20 +92,14 @@ body{
 .page_section{
     display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center; 
     width:95%;
     height:100vh;
 }
 
-#landing{
-    justify-content: center;
-    align-items: center; 
-}
-#profile{
-    align-items: center;
-    justify-content: center;
-}
-
 #profile_container{
+    width:80%;
     background-color: rgba(73, 73, 73, 0.7);
     display:flex;
     flex-direction: row;
@@ -123,10 +117,6 @@ body{
 }
 #profile_text_container{
     margin:10px;
-}
-#skills{
-    align-items: center;
-    justify-content: center;
 }
 #skills_container{
     display: flex;
@@ -160,20 +150,81 @@ body{
 }
 
 #htmlBar {
-    width: 85%;
-}
-#jsBar {
-    width: 90%;
-}
-#cssBar {
-    width: 60%;
-}
-#phpBar {
     width: 70%;
 }
+#jsBar {
+    width: 75%;
+}
+#cssBar {
+    width: 50%;
+}
+#phpBar {
+    width: 75%;
+}
 #sqlBar {
-    width: 90%;
+    width: 60%;
 }
 #jqBar {
-    width: 85%;
+    width: 65%;
+}
+
+#portfolio{
+       
+}
+
+#portfolioContainer{
+    background-color: rgba(73, 73, 73, 0.7);
+    width: 80%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    overflow-x: auto;
+}
+.portfolio__chevronContainer{
+    height: 100%;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chevron{
+    color:whitesmoke;
+}
+.chevron :hover{
+    color: #01acf1;
+}
+
+.portfolioItem{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolioItem__title{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:15%;
+}
+.portfolioItem__thumbnailContainer{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   height:70%;
+   width:auto;
+       
+}
+.portfolioItem__thumbnail{
+    height:80%;
+    width: 80%;
+}
+
+.portfolioItem__description{
+    text-align: center;
+    height:15%;    
 }

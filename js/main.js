@@ -1,13 +1,13 @@
 //Code for scrollspy
 var totalHeight = $(document).height();
 var sectionHeight = totalHeight / 5;
+var halfSectionHeight = sectionHeight / 2;
 var homeHeight = 0;
 var profileHeight = sectionHeight;
 var skillsHeight = sectionHeight * 2;
 var portfolioHeight = sectionHeight * 3;
 var contactHeight = sectionHeight * 4;
 
-var activeSection = null;
 var barsToggled = false;
 
 $('.progress-bar-filler').each(function() {
@@ -15,7 +15,7 @@ $('.progress-bar-filler').each(function() {
 });
 
 $(document).scroll(function () {
-    activeSectionWatcher(activeSection);
+    activeSectionWatcher();
 });
 
 $("#homeLink").click(function () {
@@ -41,7 +41,7 @@ $("#contactLink").click(function () {
 function activeSectionWatcher(activeSection) {
     removeActiveClass();
     currentScrollHeight = ($('body').scrollTop() + 10);
-    if (currentScrollHeight >= homeHeight && currentScrollHeight <= profileHeight) {
+    if (currentScrollHeight >= homeHeight  && currentScrollHeight <= profileHeight) {
         $('#homeLink').addClass("sidebar__anchors__active");
         activeSection = $('#homeLink');
     }
