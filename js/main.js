@@ -46,7 +46,7 @@ function activeSectionWatcher(activeSection) {
     }
     if (currentScrollHeight >= profileHeight && currentScrollHeight <= skillsHeight) {
         $('#profileLink').addClass("sidebar__anchors__active");
-        $("#profile").fadeIn(function(){
+        $("#profile").fadeIn(function () {
             console.log('Faded in');
         });
     }
@@ -82,3 +82,43 @@ function animateProgressBars() {
     }
     barsToggled = true;
 }
+//function portfolioController(){
+//    function addListeners(){
+//        $("#chevronLeft").click(scrollLeft());
+//        $("#chevronRight").click(scrollRight());            
+//        }
+//        function scrollLeft(){
+//            
+//        }
+//        function scrollRight(){
+//            
+//        }
+//        
+//    }
+    
+    
+
+
+
+var portfolioItems = ($(".portfolioItem")).length;
+var portfolioWidth = Math.floor(($("#portfolioContainer")).width(), 1);
+
+$("#chevronLeft").click(function () {    
+        if ($('#portfolioContainer').scrollLeft() === portfolioWidth) {
+        $("#portfolioContainer").scrollLeft(2 * -portfolioWidth);
+    } else {
+        $("#portfolioContainer").scrollLeft(- portfolioWidth);
+    }
+
+});
+$("#chevronRight").click(function () {    
+    if ($('#portfolioContainer').scrollLeft() === portfolioWidth) {
+        $("#portfolioContainer").scrollLeft(2 * portfolioWidth);
+    } else {
+        $("#portfolioContainer").scrollLeft(+portfolioWidth);
+    }
+
+});
+
+
+
